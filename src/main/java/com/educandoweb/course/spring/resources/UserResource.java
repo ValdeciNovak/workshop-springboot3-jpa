@@ -1,4 +1,4 @@
-package com.educandoweb.course.spring.resource;
+package com.educandoweb.course.spring.resources;
 
 import java.net.URI;
 import java.util.List;
