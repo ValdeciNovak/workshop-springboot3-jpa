@@ -1,4 +1,4 @@
-# Course Spring
+# Web Services com Spring Boot, JPA e Hibernate
 
 ## Descrição / Sobre o projeto
 
@@ -41,7 +41,7 @@ O usuário consegue realizar operações via API REST, como listar produtos, faz
 ### Clonando o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/course-spring.git
+git clone https://github.com/ValdeciNovak/course-spring.git
 cd course-spring
 ```
 
@@ -79,7 +79,20 @@ O projeto segue a estrutura padrão do Spring Boot:
 - `src/test/`: Testes unitários e de integração
 - `target/`: Arquivos compilados e build
 
-**Separação front/back:** Este é um projeto backend puro. Não há frontend integrado; as APIs podem ser consumidas por qualquer cliente (web, mobile, etc.).
+## Endpoints Principais
+
+Base URL: `http://localhost:8080`
+
+| Método | Endpoint | Descrição |
+|------|--------|----------|
+| GET | /users | Lista todos os usuários |
+| GET | /users/{id} | Busca usuário por ID |
+| POST | /users | Cria novo usuário |
+| PUT | /users/{id} | Atualiza usuário |
+| DELETE | /users/{id} | Remove usuário |
+| GET | /categories | Lista categorias |
+| GET | /products | Lista produtos |
+| GET | /orders | Lista pedidos |
 
 **Padrões utilizados:** 
 - Arquitetura em camadas (Controller -> Service -> Repository)
@@ -95,13 +108,8 @@ Durante o desenvolvimento deste projeto, aprendi:
 - **Desafios enfrentados:** Configuração correta de relacionamentos JPA (One-to-Many, Many-to-One), implementação de chaves compostas (OrderItemPK), e integração de testes com banco em memória.
 - **Habilidades adquiridas:** Proficiência em Spring Boot, uso de Maven para gerenciamento de dependências, e boas práticas de desenvolvimento Java.
 
-## Próximos passos / Melhorias
-
-- **Features futuras:** Implementar autenticação e autorização (Spring Security), adicionar paginação e filtros avançados nas APIs, integrar com um frontend React ou Angular.
-- **Refatorações planejadas:** Melhorar a validação de entrada, adicionar logs estruturados, e otimizar consultas JPA com JPQL personalizado.
-- **Outras melhorias:** Migrar para um banco de dados relacional em produção, adicionar testes de integração mais abrangentes, e implementar cache com Redis.
-
 ## Autor
 
-**Valde**  
-[GitHub](https://github.com/valde) | [LinkedIn](https://linkedin.com/in/valde)
+- Valdeci Novak Junior
+- GitHub: https://github.com/ValdeciNovak
+- LinkedIn - https://www.linkedin.com/in/valdecijuniordev/
